@@ -1,0 +1,129 @@
+
+body {
+  background-color: #283149;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  color: #dbedf3;
+  text-shadow: 3px 1px 0px #da0463;
+  margin: 50px auto 70px;
+  font-family: 'Arvo', cursive;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.keynotes-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.keynotes-container::-webkit-scrollbar{
+  display: none;
+}
+
+.tile img{
+  width: 8rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 4px black;
+}
+
+img:hover {
+  background-color: #cccccc;
+}
+
+.pressed {
+  box-shadow: 0 0px 5px 0px #cccccc !important;
+  border-radius: 6px !important;
+}
+
+p {
+  font-size: 1.7rem;
+  color: #dbedf3;
+  text-shadow: 2px 0px 2px #da0463;
+  font-family: 'Arvo', cursive;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  margin: -1px;
+}
+
+footer {
+  text-align: center;
+  margin: 100px auto 60px;
+}
+
+footer p {
+  font-size: 2rem;
+}
+
+
+/* RESPONSIVE STYLING */
+
+@media (max-width: 960px) {
+  .tile img {
+    width: 6rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .tile img {
+    width: 4rem;
+  }
+
+  p {
+      font-size: 1.5rem;
+    }
+
+  footer p {
+    font-size: 1.7rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .tile img {
+    width: unset;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  footer p{
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+}
+
+
