@@ -44,7 +44,7 @@ img:hover {
 }
 
 .pressed {
-  background-color: #cccccc;
+  background-color: #cccccc !important;
   box-shadow: 0 0px 5px 0px #cccccc !important;
   border-radius: 6px !important;
 }
